@@ -563,7 +563,7 @@ function Overview() {
   }, {
     n: "04",
     t: "Open Participation",
-    d: "Phase 1: open to all teams. Phase 2: the top 5 Phase 1 teams submit harness code for final evaluation on Qwen3.6‑27B. Final ranking determines 1st, 2nd, and 3rd place."
+    d: /*#__PURE__*/React.createElement(React.Fragment, null, "Phase 1: open to all teams. Phase 2: the top 5 Phase 1 teams submit harness code for final evaluation on ", /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6‑27B"), ". Final ranking determines 1st, 2nd, and 3rd place.")
   }];
   return /*#__PURE__*/React.createElement("section", {
     id: "overview",
@@ -813,7 +813,7 @@ function Tracks() {
       fontSize: 15,
       lineHeight: 1.55
     }
-  }, "The top 5 teams from Phase 1 submit a self\u2011contained harness \u2014 agent code, prompts, scaffolding, and the files needed to run it. Organizers evaluate every harness on a unified closed\u2011source model, Qwen3.6\u201127B, deployed via SGLang on 2\xD7 A800 80G GPUs (no NVLink). All harnesses run on a held\u2011out test set, and final results determine the 1st, 2nd, and 3rd place winners."), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(React.Fragment, null, "The top 5 teams from Phase 1 submit a self\u2011contained harness \u2014 agent code, prompts, scaffolding, and the files needed to run it. Organizers evaluate every harness on a unified closed\u2011source model, ", /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6\u201127B"), ", deployed via SGLang on 2\xD7 A800 80G GPUs (no NVLink). All harnesses run on a held\u2011out test set, and final results determine the 1st, 2nd, and 3rd place winners.")), /*#__PURE__*/React.createElement("div", {
     className: "track-meta",
     style: {
       marginTop: "auto"
@@ -826,7 +826,7 @@ function Tracks() {
     className: "k"
   }, "LLM"), /*#__PURE__*/React.createElement("div", {
     className: "v"
-  }, "Qwen3.6-27B")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6-27B"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "k"
   }, "Submits"), /*#__PURE__*/React.createElement("div", {
     className: "v"
@@ -959,7 +959,16 @@ function Rules() {
         textDecoration: "underline",
         textUnderlineOffset: "3px"
       }
-    }, "ChinaTravel dataset"), ". All harnesses run on a held‑out test set. The final evaluation uses Qwen3.6‑27B, deployed via SGLang on 2× A800 80G GPUs (no NVLink)."),
+    }, "ChinaTravel dataset"), ". All harnesses run on a held‑out test set. The final evaluation uses ", /*#__PURE__*/React.createElement("a", {
+      href: "https://huggingface.co/Qwen/Qwen3.6-27B",
+      target: "_blank",
+      rel: "noreferrer",
+      style: {
+        color: "var(--accent)",
+        textDecoration: "underline",
+        textUnderlineOffset: "3px"
+      }
+    }, "Qwen3.6‑27B"), ", deployed via SGLang on 2× A800 80G GPUs (no NVLink)."),
     m: "Tracks"
   }, {
     k: "Evaluation",
@@ -1224,7 +1233,7 @@ function Submission() {
   }, {
     n: "2",
     t: "Round 2 · Harness",
-    d: "The top 5 Phase 1 teams submit a self‑contained harness — agent code, prompts, scaffolding, and the files needed to run it. Organizers evaluate every harness on a unified closed‑source model, Qwen3.6‑27B, deployed via SGLang on 2× A800 80G GPUs (no NVLink). All harnesses run on a held‑out test set. The Round 2 submission portal and format will be announced later."
+    d: /*#__PURE__*/React.createElement(React.Fragment, null, "The top 5 Phase 1 teams submit a self‑contained harness — agent code, prompts, scaffolding, and the files needed to run it. Organizers evaluate every harness on a unified closed‑source model, ", /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6‑27B"), ", deployed via SGLang on 2× A800 80G GPUs (no NVLink). All harnesses run on a held‑out test set. The Round 2 submission portal and format will be announced later.")
   }, {
     n: "3",
     t: "Final Ranking",
@@ -1435,7 +1444,7 @@ function FAQ() {
     a: "Awards will be presented to the 1st, 2nd, and 3rd place teams. Top‑ranked Phase 2 teams are also invited to submit a system description paper for the competition proceedings."
   }, {
     q: "Which languages / frameworks are allowed?",
-    a: "Phase 1 (Prediction): any method is allowed — any LLM, prompting strategy, toolchain, or local system. Phase 2 (Harness): teams submit a self‑contained harness; the organizers run it on a unified closed‑source model (Qwen3.6‑27B). Reproducibility is expected for top‑ranked teams."
+    a: /*#__PURE__*/React.createElement(React.Fragment, null, "Phase 1 (Prediction): any method is allowed — any LLM, prompting strategy, toolchain, or local system. Phase 2 (Harness): teams submit a self‑contained harness; the organizers run it on a unified closed‑source model (", /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6‑27B"), "). Reproducibility is expected for top‑ranked teams.")
   }, {
     q: "Is this a continuation of the 2025 edition?",
     a: "Yes. This is the second edition. The task has been substantially expanded in scope, difficulty, and evaluation rigor based on feedback from the 2025 edition."
