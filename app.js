@@ -668,8 +668,8 @@ function Tracks() {
   }, /*#__PURE__*/React.createElement(SectionHead, {
     num: "03 \xB7 Track",
     title: "One track. Two <em>phases</em>.",
-    kicker: "The 2026 edition runs a single Agentic AI track. Teams iterate locally against the public leaderboard, then submit a self-contained harness that we evaluate end-to-end against a unified LLM API in the final phase.",
-    soon: true
+    kicker: "The 2026 edition runs a single Agentic AI track. In Phase 1, teams submit predictions to the public leaderboard. In Phase 2, teams submit a self‑contained harness evaluated on a unified closed‑source model.",
+    soon: false
   }), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "grid",
@@ -1453,17 +1453,13 @@ function Organizers() {
 }
 function News() {
   const items = [{
-    d: "Coming Soon",
-    t: "Task specification and baseline code release",
+    d: "Now Open",
+    t: "Registration interest form is live — sign up to receive task specification, dataset announcements, and deadline reminders.",
     tag: "Announcement"
   }, {
-    d: "Coming Soon",
-    t: "Call for program committee members",
-    tag: "Call"
-  }, {
-    d: "Coming Soon",
-    t: "Registration portal goes live",
-    tag: "Milestone"
+    d: "1 Jun 2026",
+    t: "Phase 1 data released. Public training set, submission index, and evaluation code available for download in the Data section.",
+    tag: "Release"
   }];
   return /*#__PURE__*/React.createElement("section", {
     id: "news",
@@ -1473,8 +1469,7 @@ function News() {
   }, /*#__PURE__*/React.createElement(SectionHead, {
     num: "10 \xB7 News & Updates",
     title: "Latest from the <em>organizers</em>.",
-    kicker: "Follow along as deadlines, resources, and winners are announced.",
-    soon: true
+    kicker: "Follow along as deadlines, resources, and winners are announced."
   }), /*#__PURE__*/React.createElement("div", null, items.map((it, i) => /*#__PURE__*/React.createElement("div", {
     className: "news-item",
     key: i
@@ -1490,16 +1485,16 @@ function FAQ() {
   const [open, setOpen] = useState(0);
   const faqs = [{
     q: "What is TPC?",
-    a: "TPC (Travel Planning Challenge) is an open competition for evaluating language agents on real‑world travel planning in China. The 2026 edition, co‑located with IJCAI‑ECAI 2026 in Bremen, is the second iteration of the challenge."
+    a: "TPC (Travel Planning Challenge) is an open competition for evaluating language agents on real‑world travel planning in China. The 2026 edition, co‑located with IJCAI‑ECAI 2026 in Bremen, is the second iteration. It features two tracks: prediction (Phase 1) and harness submission (Phase 2)."
   }, {
     q: "Who can participate?",
-    a: "The competition is open to teams from both academia and industry. Specific eligibility rules and team-size limits will be published with the full rulebook."
+    a: "Open to teams from universities, research institutions, and companies worldwide. At least one member per team must register for IJCAI‑ECAI 2026. No fixed team‑size limit; each participant may join at most one team per track."
   }, {
     q: "Is there a prize?",
-    a: "Prize details are being finalized and will be announced with the task specification."
+    a: "Prize details are being finalized and will be announced with the task specification. Top‑ranked teams will also be invited to submit a system description paper for the competition proceedings."
   }, {
     q: "Which languages / frameworks are allowed?",
-    a: "Any framework or model that can produce valid plans in the required submission format is welcome. Closed-source APIs are permitted as long as prompts are disclosed for reproducibility."
+    a: "Phase 1 (Prediction): any method is allowed — any LLM, prompting strategy, toolchain, or local system. Phase 2 (Harness): teams submit a self‑contained harness; the organizers run it on a unified closed‑source model (Qwen3.6‑27B). Reproducibility is expected for top‑ranked teams."
   }, {
     q: "Is this a continuation of the 2025 edition?",
     a: "Yes. This is the second edition. The task has been substantially expanded in scope, difficulty, and evaluation rigor based on feedback from the 2025 edition."
