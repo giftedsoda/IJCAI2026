@@ -19,6 +19,11 @@ const SITE_CONFIG = {
     label: "Agent Environment Guide",
     url: "agent-environment.html"
   }, {
+    label: "Phase 2 Harness Submission Example",
+    url: "ChinaTravel_harness_example.zip",
+    action: "Download",
+    download: true
+  }, {
     label: "Phase 2 In-Distribution Data",
     url: "TPC_IJCAI_2026_phase2_familiar_100_data.zip",
     action: "Download",
@@ -830,7 +835,7 @@ function Tracks() {
       fontSize: 15,
       lineHeight: 1.55
     }
-  }, "The top 5 teams from Phase 1, plus any additional teams tied with the 5th-place score, submit a self\u2011contained harness \u2014 agent code, prompts, scaffolding, and the files needed to run it. Organizers evaluate every harness on ", /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6\u201127B"), ", deployed via SGLang on 2\xD7 A800 80G GPUs (no NVLink). All harnesses run on a held\u2011out test set, and final results determine the 1st, 2nd, and 3rd place winners."), /*#__PURE__*/React.createElement("div", {
+  }, "The top 5 teams from Phase 1, plus any additional teams tied with the 5th-place score, submit a self\u2011contained harness \u2014 agent code, prompts, scaffolding, and the files needed to run it. Organizers evaluate every harness on ", /*#__PURE__*/React.createElement("a", {href: "https://huggingface.co/Qwen/Qwen3.6-27B", target: "_blank", rel: "noreferrer", style: {color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px"}}, "Qwen3.6\u201127B"), ", deployed via SGLang on 2\xD7 A800 80G GPUs (no NVLink). Each submitted harness must process all 100 held-out evaluation queries within a total runtime limit of 5 hours. Final results determine the 1st, 2nd, and 3rd place winners."), /*#__PURE__*/React.createElement("div", {
     className: "track-meta",
     style: {
       marginTop: "auto"
@@ -977,7 +982,7 @@ function Rules() {
         textDecoration: "underline",
         textUnderlineOffset: "3px"
       }
-    }, "ChinaTravel dataset"), ". All harnesses run on a held‑out test set. The final evaluation uses Qwen3.6‑27B, deployed via SGLang on 2× A800 80G GPUs (no NVLink)."),
+    }, "ChinaTravel dataset"), ". All harnesses run on a held‑out test set. Each submitted harness must process all 100 evaluation queries within a total runtime limit of 5 hours. The final evaluation uses Qwen3.6‑27B, deployed via SGLang on 2× A800 80G GPUs (no NVLink)."),
     m: "Tracks"
   }, {
     k: "Evaluation",
@@ -1405,7 +1410,95 @@ function Submission() {
       fontSize: 13,
       lineHeight: 1.5
     }
-  }, "This is a minimal valid submission package. Extra top-level folders inside the zip are handled normally."))), /*#__PURE__*/React.createElement("div", {
+  }, "This is a minimal valid submission package. Extra top-level folders inside the zip are handled normally.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: "1px solid var(--rule)",
+      background: "var(--paper)",
+      padding: "20px 22px",
+      minHeight: 160,
+      height: "100%",
+      display: "grid",
+      gap: 10,
+      alignContent: "start"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mono",
+    style: {
+      color: "var(--muted)",
+      fontSize: 12,
+      letterSpacing: "0.08em",
+      textTransform: "uppercase"
+    }
+  }, "Round 2 Packaging Rule"), /*#__PURE__*/React.createElement("div", {
+    className: "serif",
+    style: {
+      color: "var(--ink)",
+      fontSize: 21,
+      lineHeight: 1.15
+    }
+  }, "Submit up to two versioned packages."), /*#__PURE__*/React.createElement("div", {
+    className: "mono",
+    style: {
+      color: "var(--seal)",
+      fontSize: 13,
+      lineHeight: 1.5,
+      letterSpacing: 0,
+      textTransform: "none",
+      wordBreak: "break-word",
+      whiteSpace: "pre-line"
+    }
+  }, "{TeamName}_v1.zip\n{TeamName}_v2.zip"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "var(--ink-soft)",
+      fontSize: 13,
+      lineHeight: 1.5
+    }
+  }, "Each version is evaluated on 100 held-out queries with a total runtime limit of 5 hours.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: "1px solid var(--rule)",
+      background: "var(--paper)",
+      padding: "20px 22px",
+      minHeight: 160,
+      height: "100%",
+      display: "grid",
+      gap: 10,
+      alignContent: "start"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mono",
+    style: {
+      color: "var(--muted)",
+      fontSize: 12,
+      letterSpacing: "0.08em",
+      textTransform: "uppercase"
+    }
+  }, "Round 2 Harness Example"), /*#__PURE__*/React.createElement("a", {
+    href: "ChinaTravel_harness_example.zip",
+    download: true,
+    className: "serif",
+    style: {
+      justifySelf: "start",
+      display: "inline-flex",
+      alignItems: "center",
+      minHeight: 44,
+      padding: "0 18px",
+      border: "1px solid var(--seal)",
+      background: "var(--seal)",
+      color: "var(--cream)",
+      fontSize: 17,
+      lineHeight: 1,
+      letterSpacing: 0,
+      textTransform: "none",
+      textDecoration: "none",
+      whiteSpace: "nowrap"
+    }
+  }, "Download harness example"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "var(--ink-soft)",
+      fontSize: 13,
+      lineHeight: 1.5
+    }
+  }, "Use this package as a reference for the required entry point, configuration, and output layout."))), /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: 48,
       border: "1px solid var(--rule)",

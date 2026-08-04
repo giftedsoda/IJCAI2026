@@ -435,6 +435,11 @@
     <div class="intro-actions">
       <a
         class="source-button"
+        href="ChinaTravel_harness_example.zip"
+        download
+      >Download Submission Example</a>
+      <a
+        class="source-button"
         href="https://github.com/LAMDA-NeSy/ChinaTravel/tree/main/agent_env"
         target="_blank"
         rel="noreferrer"
@@ -602,6 +607,15 @@ python -m agent_env.cli call intercity_transport_select \
           through <code>agent_env.cli</code>, parses the itinerary JSON, saves
           it in the official result layout, and runs the official evaluators.
         </p>
+
+        <div class="callout">
+          <p>
+            <strong>Evaluation time limit.</strong> Each submitted harness must
+            process all 100 held-out evaluation queries within a total runtime
+            limit of 5 hours. This is the limit for the complete 100-query run,
+            not a separate 5-hour limit for each query.
+          </p>
+        </div>
 
         <h3>Supported Runners</h3>
         <ul>
